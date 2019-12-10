@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sistema de Irrigação para Hortas Domiciliares</title>
+      <link rel="stylesheet" href="../css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+      <script src="../script/demo.js" type="text/javascript"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+   </head>
+   <body>
+      <div class="wrapper" >
+            <Container class="mt-5">
+               <h2 class="text-center">Sistema de Irrigação para <br>Hortas Domiciliares</h2>
+            </Container>
+      
+         
+         <!--div class="text-center mt-5">
+            <img src="../image/gas.svg" class="rounded" alt="...">
+          </div-->
+      
+         <div class="text-center mt-5">
+            <form id="connection-information-form">
+               
+               <b id="temperatura"></b> 
+               <div class="divider-2"/>
+               
+               <b id="umidade1"></b> 
+               <div class="divider-2"/>
+               
+               <b id="umidade2"></b> 
+               <div class="divider-2"/>
+               
+               <b id="nivelReservatorio"></b>
+               <div class="divider-2"/>
+               
+               <b id="time"></b>
+               <div class="d-flex justify-content-center">
+                  <div class="spinner-border" role="status" id="wait">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+            </form>
+         </div>
+      </div>
+      
+      <script>
+          startConnect();
+      </script>
+   </body>
+</html>
